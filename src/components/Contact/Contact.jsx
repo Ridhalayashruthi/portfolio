@@ -26,7 +26,7 @@ const Contact = () => {
       <div className="contact-grid">
 
         <a
-          href="mailto:YOUR_EMAIL@gmail.com"
+          href="mailto:shruthilakshmanan21@gmail.com"
           className="contact-card"
         >
           <FiMail className="contact-icon" />
@@ -38,7 +38,7 @@ const Contact = () => {
         </a>
 
         <a
-          href="YOUR_LINKEDIN_URL"
+          href="https://www.linkedin.com/in/ridhalayasruthi-lakshmanan/"
           target="_blank"
           rel="noreferrer"
           className="contact-card"
@@ -52,7 +52,7 @@ const Contact = () => {
         </a>
 
         <a
-          href="YOUR_GITHUB_URL"
+          href="https://github.com/Ridhalayashruthi"
           target="_blank"
           rel="noreferrer"
           className="contact-card"
