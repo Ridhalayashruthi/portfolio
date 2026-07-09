@@ -1,115 +1,99 @@
-import "./Hero.css";
-import profile from "../../assets/images/profile.png";
-import {
-  FiDownload,
-  FiMail,
-} from "react-icons/fi";
-import {
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
+import './Hero.css';
+import { TypeAnimation } from 'react-type-animation';
+import profile from '../../assets/images/profile.png';
+import { FiDownload, FiMail, FiSend } from 'react-icons/fi';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section className="hero" id="home">
-      <div className="hero-container">
-
-        {/* LEFT */}
-
-        <div className="hero-left">
-
-          <div className="hero-badge">
-            ● Available for Frontend Opportunities
+    <section className='hero' id='home'>
+      <div className='hero-wrapper'>
+        <div className='hero-container'>
+          <div className='hero-right'>
+            <div className='hero-image'>
+              <img src={profile} alt='Ridhalayasruthi' />
+            </div>
           </div>
 
-          <h1>
-            Ridhalayasruthi
-            <br />
-            Lakshmanan
-          </h1>
+          <div className='hero-left'>
+            <div className='hero-badge'>
+              Available for Frontend Opportunities
+            </div>
+            <h1>
+              Ridhalayasruthi
+              <br />
+              Lakshmanan
+            </h1>
+            <TypeAnimation
+              sequence={[
+                'Senior Frontend Engineer',
+                2500,
 
-          <h2>Senior Frontend Engineer</h2>
+                'React.js • JavaScript • TypeScript',
+                2500,
 
-          <p>
-            Building scalable, accessible and high-performance web
-            applications using React, JavaScript and modern frontend
-            architecture. Passionate about creating intuitive user
-            experiences with clean, maintainable code.
-          </p>
+                'Building Enterprise Web Applications',
+                2500,
 
-          <div className="hero-buttons">
+                'Passionate About Clean UI & UX',
+                2500,
 
-            <a
-              href="/Ridhalayasruthi.pdf"
-              download="Ridhalayasruthi_Lakshmanan_Resume.pdf"
-              className="primary-btn"
-            >
-              <FiDownload />
-              Download Resume
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/ridhalayasruthi-lakshmanan/"
-              className="secondary-btn"
-            >
-              <FiMail />
-              Let's Connect
-            </a>
-
-          </div>
-
-          <div className="tech-stack">
-
-            <span>React.js</span>
-            <span>Redux</span>
-            <span>JavaScript</span>
-            <span>Material UI</span>
-            <span>Ant Design</span>
-            <span>REST APIs</span>
-
-          </div>
-
-          <div className="hero-socials">
-
-            <a
-              href="https://github.com/Ridhalayashruthi"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/ridhalayasruthi-lakshmanan/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaLinkedin />
-            </a>
-
-            <a href="mailto:shruthilakshmanan21@gmail.com">
-              <FiMail />
-            </a>
-
-          </div>
-
-        </div>
-
-        {/* RIGHT */}
-
-        <div className="hero-right">
-
-          <div className="hero-image">
-
-            <img
-              src={profile}
-              alt="Ridhalayasruthi"
+                'Always Learning. Always Improving.',
+                2500,
+              ]}
+              wrapper='span'
+              speed={60}
+              repeat={Infinity}
+              cursor={false}
+              className='typing-title'
             />
 
+            <p>
+              Building scalable, accessible and high-performance web
+              applications using React, JavaScript and modern frontend
+              architecture. Passionate about creating intuitive user experiences
+              with clean, maintainable code.
+            </p>
+
+            <div className='hero-buttons'>
+              <a
+                href='/Ridhalayasruthi.pdf'
+                download='Ridhalayasruthi_Lakshmanan_Resume.pdf'
+                className='primary-btn'
+              >
+                <FiDownload />
+                Download Resume
+              </a>
+
+              <a href='#contact' className='secondary-btn'>
+                <FiSend size={18} />
+                Let's Connect
+              </a>
+            </div>
+
+            <div className='hero-socials'>
+              <a
+                href='https://github.com/Ridhalayashruthi'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FaGithub />
+              </a>
+
+              <a
+                href='https://www.linkedin.com/in/ridhalayasruthi-lakshmanan/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FaLinkedin />
+              </a>
+
+              <a href='mailto:shruthilakshmanan21@gmail.com'>
+                <FiMail />
+              </a>
+            </div>
           </div>
-
         </div>
-
       </div>
     </section>
   );

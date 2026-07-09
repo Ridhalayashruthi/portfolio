@@ -11,15 +11,15 @@ const featuredWork = [
       technologies: [
         "React",
         "Redux",
-        "JavaScript",
-        "AWS S3",
+        "Node.js",
         "HTML5",
         "CSS3",
+        "REST API"
       ],
   
       contributions: [
         "Developed reusable React components.",
-        "Implemented AWS S3 file upload functionality.",
+        "Implement New UI Features/Pages",
         "Built scalable enterprise UI modules.",
         "Optimized frontend performance.",
         "Collaborated with Agile teams."

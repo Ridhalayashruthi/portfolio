@@ -14,7 +14,7 @@ const FeaturedWork = () => {
 
       <div className="section-header">
         <span>FEATURED WORK</span>
-        <h2>Enterprise products I've contributed to.</h2>
+        <h2>Enterprise solutions I've helped build</h2>
       </div>
 
       <div className="work-grid">

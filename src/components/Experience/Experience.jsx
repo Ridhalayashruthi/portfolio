@@ -6,7 +6,7 @@ const Experience = () => {
 
       <div className="section-header">
         <span>CAREER JOURNEY</span>
-        <h2>Delivering impactful frontend solutions across enterprise client engagements.</h2>
+        <h2>Professional Journey</h2>
       </div>
 
       <div className="company-card">
