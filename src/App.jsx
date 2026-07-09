@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import ReactGA from "./analytics";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Hero from "./components/Hero/Hero.jsx";
 import About from "./components/About/About";
@@ -12,6 +14,12 @@ import "./styles/globals.css";
 
 
 function App() {
+  useEffect(() => {
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname,
+    });
+  }, []);
   return (
     <>
       <Navbar />

@@ -79,6 +79,41 @@
     color: #6b7280;
   }
   
+  .scroll-top {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+  
+    width: 56px;
+    height: 56px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: none;
+    outline: none;
+  
+    border-radius: 50%;
+    cursor: pointer;
+  
+    background: #111827;
+    color: #ffffff;
+  
+    font-size: 22px;
+  
+    box-shadow: 0 15px 35px rgba(17, 24, 39, 0.25);
+  
+    transition: all .3s ease;
+  
+    z-index: 1000;
+  }
+  
+  .scroll-top:hover {
+    transform: translateY(-5px);
+    background: #1f2937;
+  }
+  
   .back-top {
     width: 48px;
     height: 48px;

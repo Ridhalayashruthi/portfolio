@@ -1,3 +1,4 @@
+import ReactGA from "../../analytics";
 import './Hero.css';
 import { TypeAnimation } from 'react-type-animation';
 import profile from '../../assets/images/profile.png';
@@ -60,6 +61,12 @@ const Hero = () => {
                 href='/Ridhalayasruthi.pdf'
                 download='Ridhalayasruthi_Lakshmanan_Resume.pdf'
                 className='primary-btn'
+                onClick={() => {
+                  ReactGA.event({
+                    category: "Resume",
+                    action: "Download Resume",
+                  });
+                }}
               >
                 <FiDownload />
                 Download Resume
