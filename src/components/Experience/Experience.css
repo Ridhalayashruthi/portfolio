@@ -1,0 +1,175 @@
+.experience {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px;
+  }
+  
+  .company-card {
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 24px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    transition: all 0.35s ease;
+  }
+  
+  .company-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+  }
+  
+  .company-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+  
+  .company-header h3 {
+    font-size: 2rem;
+    color: #111827;
+    margin-bottom: 8px;
+  }
+  
+  .company-header h4 {
+    font-size: 1.2rem;
+    color: #374151;
+    margin-bottom: 8px;
+  }
+  
+  .company-header p {
+    color: #6b7280;
+  }
+  
+  .experience-badge {
+    background: #111827;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .company-description {
+    color: #4b5563;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  
+  .client-title {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #111827;
+  }
+  
+  .client-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .client-card {
+    border: 1px solid #ececec;
+    border-radius: 20px;
+    padding: 25px;
+    transition: 0.3s ease;
+  }
+  
+  .client-card:hover {
+    transform: translateY(-5px);
+    border-color: #111827;
+  }
+  
+  .client-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .client-top h4 {
+    font-size: 1.2rem;
+    color: #111827;
+  }
+  
+  .client-top span {
+    font-size: 0.85rem;
+    color: #6b7280;
+  }
+  
+  .project-name {
+    color: #4b5563;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tech-stack span {
+    background: #f5f5f5;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: #374151;
+  }
+  
+  details {
+    margin-top: 15px;
+  }
+  
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #111827;
+    list-style: none;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  summary::after {
+    content: " ▼";
+    font-size: 0.75rem;
+  }
+  
+  details[open] summary::after {
+    content: " ▲";
+  }
+  
+  details ul {
+    margin-top: 15px;
+    padding-left: 18px;
+  }
+  
+  details li {
+    color: #4b5563;
+    margin-bottom: 12px;
+    line-height: 1.7;
+  }
+  
+  .previous-company {
+    margin-top: 60px;
+  }
+  
+  @media (max-width: 768px) {
+  
+    .company-header {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .client-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .company-header h3 {
+      font-size: 1.6rem;
+    }
+  }
