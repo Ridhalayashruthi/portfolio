@@ -1,112 +1,112 @@
 .featured-work {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 120px 20px;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.work-card {
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+.browser-header {
+  display: flex;
+  gap: 8px;
+  padding: 18px;
+  background: #f7f7f7;
+}
+
+.browser-header span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d1d5db;
+}
+
+.work-content {
+  padding: 30px;
+}
+
+.company {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.work-content h3 {
+  margin: 10px 0 16px;
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+.description {
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.tech-stack span {
+  padding: 8px 14px;
+  background: #f3f4f6;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  transition: 0.25s;
+}
+
+.tech-stack span:hover {
+  background: #111827;
+  color: #fff;
+}
+
+.view-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #111827;
+  padding: 0;
+}
+
+.contribution {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #ececec;
+}
+
+.contribution ul {
+  padding-left: 18px;
+}
+
+.contribution li {
+  margin-bottom: 12px;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
   .work-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    grid-template-columns: 1fr;
   }
-  
-  .work-card {
-    background: #fff;
-    border: 1px solid #ececec;
-    border-radius: 24px;
-    overflow: hidden;
-    transition: all .3s ease;
-  }
-  
-  .work-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 45px rgba(0,0,0,.08);
-  }
-  
-  .browser-header {
-    display: flex;
-    gap: 8px;
-    padding: 18px;
-    background: #f7f7f7;
-  }
-  
-  .browser-header span {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #d1d5db;
-  }
-  
-  .work-content {
-    padding: 30px;
-  }
-  
-  .company {
-    font-size: .85rem;
-    letter-spacing: 1px;
-    color: #6b7280;
-    text-transform: uppercase;
-  }
-  
-  .work-content h3 {
-    margin: 10px 0 16px;
-    font-size: 1.5rem;
-    color: #111827;
-  }
-  
-  .description {
-    line-height: 1.7;
-    color: #4b5563;
-    margin-bottom: 20px;
-  }
-  
-  .tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 24px;
-  }
-  
-  .tech-stack span {
-    padding: 8px 14px;
-    background: #f3f4f6;
-    border-radius: 999px;
-    font-size: .85rem;
-    transition: .25s;
-  }
-  
-  .tech-stack span:hover {
-    background: #111827;
-    color: #fff;
-  }
-  
-  .view-btn {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    color: #111827;
-    padding: 0;
-  }
-  
-  .contribution {
-    margin-top: 24px;
-    padding-top: 20px;
-    border-top: 1px solid #ececec;
-  }
-  
-  .contribution ul {
-    padding-left: 18px;
-  }
-  
-  .contribution li {
-    margin-bottom: 12px;
-    color: #4b5563;
-    line-height: 1.7;
-  }
-  
-  @media (max-width: 768px) {
-    .work-grid {
-      grid-template-columns: 1fr;
-    }
-  }
+}

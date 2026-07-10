@@ -1,114 +1,206 @@
-.about{
-    max-width:1200px;
-    margin:auto;
-    padding:90px 20px;
+html,
+body {
+  overflow-x: hidden;
+}
+.about {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 20px;
 }
 .section-header {
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto 56px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 56px;
+}
+
+.section-header span {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: #111827;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-header p {
+  max-width: 760px;
+  margin: 24px auto 0;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #6b7280;
+}
+
+.about-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+.about-content p {
+  color: #666;
+
+  line-height: 1.9;
+
+  font-size: 1.05rem;
+}
+
+.stats-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+.stat-card {
+  background: white;
+
+  border: 1px solid #ececec;
+
+  border-radius: 22px;
+
+  padding: 40px;
+
+  transition: 0.35s;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.04);
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card h3 {
+  font-size: 3rem;
+
+  color: #111;
+
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: #666;
+
+  font-size: 1rem;
+}
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 70px 20px;
+
+    max-width: 100%;
+
+    overflow: hidden;
   }
-  
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
   .section-header span {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #6b7280;
-    margin-bottom: 20px;
+    font-size: 13px;
+
+    letter-spacing: 2px;
   }
-  
+
   .section-header h2 {
-    font-size: 56px;
-    line-height: 1.1;
-    font-weight: 800;
-    letter-spacing: -2px;
-    color: #111827;
-    max-width: 900px;
-    margin: 0 auto;
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
   }
-  
-  .section-header p {
-    max-width: 760px;
-    margin: 24px auto 0;
-    font-size: 20px;
+
+  .about-grid {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 40px;
+
+    align-items: stretch;
+  }
+
+  .about-content {
+    order: 1;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+
     line-height: 1.8;
-    color: #6b7280;
+
+    text-align: left;
   }
 
-.about-grid{
+  .stats-grid {
+    order: 2;
 
-    display:grid;
+    display: grid;
 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 
-    gap:80px;
+    gap: 16px;
 
-    align-items:center;
-}
+    width: 100%;
+  }
 
-.about-content{
+  .stat-card {
+    padding: 24px 16px;
 
-    display:flex;
+    border-radius: 18px;
 
-    flex-direction:column;
+    text-align: center;
 
-    gap:25px;
-}
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  }
 
-.about-content p{
+  .stat-card h3 {
+    font-size: 38px;
 
-    color:#666;
+    margin-bottom: 10px;
+  }
 
-    line-height:1.9;
+  .stat-card p {
+    font-size: 14px;
 
-    font-size:1.05rem;
-}
-
-.stats-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:25px;
-}
-
-.stat-card{
-
-    background:white;
-
-    border:1px solid #ececec;
-
-    border-radius:22px;
-
-    padding:40px;
-
-    transition:.35s;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.04);
-}
-
-.stat-card:hover{
-
-    transform:translateY(-8px);
-
-    box-shadow:0 30px 60px rgba(0,0,0,.08);
-}
-
-.stat-card h3{
-
-    font-size:3rem;
-
-    color:#111;
-
-    margin-bottom:10px;
-}
-
-.stat-card p{
-
-    color:#666;
-
-    font-size:1rem;
+    line-height: 1.4;
+  }
 }
