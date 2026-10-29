@@ -144,16 +144,16 @@ const Experience = () => {
 
           <div>
 
-            <h3>Frontend Developer</h3>
+            <h3>Developer</h3>
 
-            <h4>SkiTech</h4>
+            <h4>Kyriatec IT Systems Pvt. Ltd.</h4>
 
-            <p>Sep 2019 — Sep 2021</p>
+            <p>Sep 2019 — Dec 2021</p>
 
           </div>
 
           <span className="experience-badge">
-            2 Years
+            3 Months
           </span>
 
         </div>
